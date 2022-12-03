@@ -1,0 +1,4 @@
+xmodmap ~/.Xmodmap
+
+# Make the newly mapped Caps Lock key also be used as an Escape key.
+xcape -e "Control_L=Escape"

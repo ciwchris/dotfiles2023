@@ -1,0 +1,11 @@
+## Hash Linux
+# My personal zshrc
+# Edit this file
+
+alias n="nvim"
+
+# Install deno for silverbullet
+# https://github.com/silverbulletmd/silverbullet#installing-silver-bullet 
+export DENO_INSTALL="/home/ciwchris/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+

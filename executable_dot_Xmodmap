@@ -1,0 +1,14 @@
+! Setting up Xmodmap https://askubuntu.com/a/211461 
+! Make caps as control and escape at the same time. Based on super-caps by cmatheson.
+!keycode 65 = Tab
+!keycode 23 = space
+
+clear Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
+add Lock = Caps_Lock
+keycode 999 = Escape
+
+! Map the Menu key to the PrtSc key
+keysym Print = Menu
+

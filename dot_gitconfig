@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = 350318+ciwchris@users.noreply.github.com
+	name = Christopher Lopes
+[alias]
+  s = status

@@ -15,5 +15,14 @@ vim.opt.ruler=true        --show cursor position all of the time
 vim.opt.scrolloff=3       --3 lines before and after the current line
 vim.opt.mouse="v"         --Allow middle click paste https://github.com/neovim/neovim/issues/2468#issuecomment-236464848
 
+-- Change to directory of current file automatically
+vim.api.nvim_create_autocmd(
+    { "BufEnter", "BufRead", "BufNewFile","BufFilePost" },
+    { pattern = { "*" }, command = "silent! lcd %:p:h" }
+)
 
-
+-- Enable spell checker on certain files
+vim.api.nvim_create_autocmd(
+    { "BufRead", "BufNewFile" },
+    { pattern = { "*.txt", "*.md", "*.tex" }, command = "setlocal spell" }
+)

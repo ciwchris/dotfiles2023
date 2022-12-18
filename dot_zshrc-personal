@@ -2,7 +2,17 @@
 # My personal zshrc
 # Edit this file
 
+export EDITOR=nvim
+
 alias n="nvim"
+alias ...="cd ../.."
+alias ....="cd ../../../"
+
+# open ~/.zshrc in using the default editor specified in $EDITOR
+alias ec="$EDITOR $HOME/.zshrc-personal"
+
+# source ~/.zshrc
+alias sc="source $HOME/.zshrc-personal"
 
 # Install deno for silverbullet
 # https://github.com/silverbulletmd/silverbullet#installing-silver-bullet 
